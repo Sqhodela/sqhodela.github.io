@@ -18,19 +18,18 @@
     flex-direction: row;
     justify-content: flex-start;
   }
-  .phone-ellipse1 {
-    top: 21.700000762939453px;
-    left: 0px;
+  .ellipse {
     width: inherit;
     height: 133px;
     position: absolute;
-    border-color: transparent;
+    background-color: #B892D7;
+    border-radius: 35%;
   }
-  .phone-rectangle5 {
+  .rectangle {
     width: inherit;
     height: 88px;
     position: absolute;
-    border-color: transparent;
+    background-color: #B892D7;
   }
   .phone-text {
     top: 20;
