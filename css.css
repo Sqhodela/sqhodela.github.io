@@ -1,0 +1,57 @@
+.phone-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url("/playground_assets/running-person-1500w.png");
+  }
+  .phone-header {
+    width: inherit;
+    height: 155px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .phone-ellipse1 {
+    top: 21.700000762939453px;
+    left: 0px;
+    width: inherit;
+    height: 133px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .phone-rectangle5 {
+    width: inherit;
+    height: 88px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .phone-text {
+    top: 20;
+    left: 125;
+    position: sticky;
+    font-size: 35px;
+    text-align: center;
+    font-family: Comic Neue;
+    font-weight: 400;
+  }
+  .phone-image1 {
+    top: 25;
+    left: 35;
+    width: 65px;
+    height: 66px;
+    position: fixed;
+  }
+  .phone-image2 {
+    top: 25;
+    left: 350;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+  }
