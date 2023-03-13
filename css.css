@@ -1,7 +1,33 @@
-#center{
+#header{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Verdana;
+  }
+.center{
+    display: block;
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
+    width: inherit;
+  }
+.ellipse {
+  position: absolute;
+  width: inherit;
+  height: 133px;
+  background-color: #B892D7;
+  border-radius: 35%;
+}
+.rectangle {
+  position: absolute;
+  width: inherit;
+  height: 88px;
+  background-color: #B892D7;
+}
+.text {
+  position: relative;
+  font-size: 20px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
 .phone-container {
     width: 100%;
@@ -22,25 +48,7 @@
     flex-direction: row;
     justify-content: flex-start;
   }
-  .ellipse {
-    position: absolute;
-    width: inherit;
-    height: 133px;
-    background-color: #B892D7;
-    border-radius: 35%;
-  }
-  .rectangle {
-    position: absolute;
-    width: inherit;
-    height: 88px;
-    background-color: #B892D7;
-  }
-  .text {
-    position: relative;
-    font-size: 35px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-  }
+
   .phone-image1 {
     top: 25;
     left: 35;
