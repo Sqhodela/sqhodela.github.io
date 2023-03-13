@@ -1,3 +1,8 @@
+#center{
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 .phone-container {
     width: 100%;
     display: flex;
@@ -18,25 +23,22 @@
     justify-content: flex-start;
   }
   .ellipse {
+    position: absolute;
     width: inherit;
     height: 133px;
-    position: absolute;
     background-color: #B892D7;
     border-radius: 35%;
   }
   .rectangle {
+    position: absolute;
     width: inherit;
     height: 88px;
-    position: absolute;
     background-color: #B892D7;
   }
-  .phone-text {
-    top: 20;
-    left: 125;
-    position: sticky;
+  .text {
+    position: relative;
     font-size: 35px;
-    text-align: center;
-    font-family: Comic Neue;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
   }
   .phone-image1 {

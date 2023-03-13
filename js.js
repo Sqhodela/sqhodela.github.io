@@ -7,12 +7,9 @@ $(document).ready(function(){
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)) {
             $(DesktopInUse).hide();
-            $(MobileInUse).show();
          } 
          else if (navigator.userAgent.match(/webOS/i)){
          }
          else {
-            $(DesktopInUse).show();
-            $(MobileInUse).hide();
          }
         });
