@@ -9,6 +9,6 @@ $(document).ready(function(){
          || navigator.userAgent.match(/Windows Phone/i)) {
             $(DesktopInUse).hide();
          } else {
-            $(DesktopInUse).hide();
+            $(MobileInUse).hide();
          }
         });
