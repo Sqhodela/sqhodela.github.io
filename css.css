@@ -12,16 +12,26 @@
   }
 .ellipse {
   position: absolute;
-  width: inherit;
-  height: 133px;
   background-color: #B892D7;
   border-radius: 35%;
 }
 .rectangle {
   position: absolute;
-  width: inherit;
-  height: 88px;
   background-color: #B892D7;
+}
+.dingsl-left {
+  width: 500px;
+  height: 100px;
+  border-bottom-right-radius: 25%;
+  border-top-right-radius: 25%;
+  align-self:flex-start;
+}
+.dingsl-right {
+  width: 500px;
+  height: 100px;
+  border-bottom-left-radius: 25%;
+  border-top-left-radius: 25%;
+  align-self:flex-start;
 }
 .text {
   position: relative;
@@ -29,7 +39,7 @@
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
 }
-.phone-container {
+.Pcontainer {
     width: 100%;
     display: flex;
     overflow: auto;
@@ -38,7 +48,7 @@
     flex-direction: column;
     background-size: cover;
   }
-  .phone-header {
+  .header {
     width: inherit;
     height: 155px;
     display: flex;
@@ -47,19 +57,4 @@
     align-items: flex-start;
     flex-direction: row;
     justify-content: flex-start;
-  }
-
-  .phone-image1 {
-    top: 25;
-    left: 35;
-    width: 65px;
-    height: 66px;
-    position: fixed;
-  }
-  .phone-image2 {
-    top: 25;
-    left: 350;
-    width: 75px;
-    height: 75px;
-    position: fixed;
   }
