@@ -21,10 +21,11 @@
 }
 .dingsl-left {
   width: 550px;
-  height: 200px;
+  height: 170px;
   border-bottom-right-radius: 35%;
   border-top-right-radius: 35%;
   align-self:flex-start;
+  padding: 52px 0px 0px 40px;
 }
 .dingsl-right {
   width: 550px;
@@ -32,6 +33,8 @@
   border-bottom-left-radius: 35%;
   border-top-left-radius: 35%;
   align-self:flex-start;
+  text-align: right;
+  padding: 52px 40px 0px 0px;
 }
 .text {
   position: relative;
@@ -48,7 +51,7 @@
     flex-direction: column;
     background-size: cover;
   }
-  .header {
+.header {
     width: inherit;
     height: 155px;
     display: flex;
@@ -58,3 +61,7 @@
     flex-direction: row;
     justify-content: flex-start;
   }
+div{
+  align-items: center;
+  vertical-align: middle;
+}
