@@ -1,5 +1,5 @@
 #header{
-    font-size: 40px;
+    font-size: 47px;
     font-weight: 500;
     font-family: Verdana;
   }
@@ -25,21 +25,21 @@
   background-color: #B892D7;
 }
 .dingsl-left {
-  width: 550px;
-  height: 170px;
+  width: 53vw;
+  height: 11vh;
   border-bottom-right-radius: 35%;
   border-top-right-radius: 35%;
   align-self:flex-start;
-  padding: 52px 0px 0px 40px;
+  padding: 3vh 0px 0px 3vw;
 }
 .dingsl-right {
-  width: 550px;
-  height: 170px;
+  width: 53vw;
+  height: 12vh;
   border-bottom-left-radius: 35%;
   border-top-left-radius: 35%;
   align-self:flex-start;
   text-align: right;
-  padding: 52px 40px 0px 0px;
+  padding: 3vh 3vw 0px 0px;
 }
 .text {
   position: relative;
@@ -61,6 +61,6 @@
   flex-direction: row;
   justify-content: flex-start;
   }
-.space{
-  padding: 150px 0px 150px 0px;
+.dingsl-space{
+  padding: 5vh 0px 140px 0px;
 }
