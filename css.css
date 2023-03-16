@@ -9,7 +9,7 @@
   min-height: 100vh;
 }
 #indicator{
-  background-color: greenyellow;
+  background-color: burlywood;
 }
 .center{
     display: block;
@@ -29,7 +29,7 @@
 }
 .dingsl-left {
   width: 53vw;
-  height: 11vh;
+  height: 7vh;
   border-bottom-right-radius: 35%;
   border-top-right-radius: 35%;
   align-self:flex-start;
@@ -37,9 +37,9 @@
 }
 .dingsl-right {
   width: 53vw;
-  height: 12vh;
-  border-bottom-left-radius: 35%;
-  border-top-left-radius: 35%;
+  height: 10vh;
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 30%;
   align-self:flex-start;
   text-align: right;
   padding: 3vh 3vw 0px 0px;
