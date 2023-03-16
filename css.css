@@ -20,14 +20,14 @@
   background-color: #B892D7;
 }
 .dingsl-left {
-  width: 600px;
+  width: 550px;
   height: 200px;
   border-bottom-right-radius: 35%;
   border-top-right-radius: 35%;
   align-self:flex-start;
 }
 .dingsl-right {
-  width: 600px;
+  width: 550px;
   height: 170px;
   border-bottom-left-radius: 35%;
   border-top-left-radius: 35%;
