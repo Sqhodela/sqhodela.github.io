@@ -20,17 +20,17 @@
   background-color: #B892D7;
 }
 .dingsl-left {
-  width: 500px;
-  height: 100px;
-  border-bottom-right-radius: 25%;
-  border-top-right-radius: 25%;
+  width: 750px;
+  height: 200px;
+  border-bottom-right-radius: 35%;
+  border-top-right-radius: 35%;
   align-self:flex-start;
 }
 .dingsl-right {
-  width: 500px;
-  height: 100px;
-  border-bottom-left-radius: 25%;
-  border-top-left-radius: 25%;
+  width: 750px;
+  height: 200px;
+  border-bottom-left-radius: 35%;
+  border-top-left-radius: 35%;
   align-self:flex-start;
 }
 .text {
