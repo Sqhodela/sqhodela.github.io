@@ -11,4 +11,17 @@ $(document).ready(function(){
          else {
             //$("div:not(.yes)").hide();
          }
+
+         $("#button1").click(function(){
+            $(".dingsl-space").hide();
+         });
+
+         $(".header").click(function(){
+            $(".dingsl-space").fadeIn();
+            
+         });
+
+         $("#button3").click(function(){
+            alert("fick di 3");
+         });
         });

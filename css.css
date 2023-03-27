@@ -33,16 +33,16 @@
   border-bottom-right-radius: 35%;
   border-top-right-radius: 35%;
   align-self:flex-start;
-  padding: 3vh 0px 0px 3vw;
+  padding: 1.8vh 0px 0px 3vw;
 }
 .dingsl-right {
   width: 53vw;
-  height: 10vh;
+  height: 7vh;
   border-bottom-left-radius: 30%;
   border-top-left-radius: 30%;
   align-self:flex-start;
   text-align: right;
-  padding: 3vh 3vw 0px 0px;
+  padding: 1.8vh 3vw 0px 0px;
 }
 .text {
   position: relative;
