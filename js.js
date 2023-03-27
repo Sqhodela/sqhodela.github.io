@@ -13,6 +13,7 @@ $(document).ready(function(){
          }
 
          $("#button1").click(function(){
+            $("#button1").style.backgroundColor = "#000000";
             $(".dingsl-space").hide();
          });
 

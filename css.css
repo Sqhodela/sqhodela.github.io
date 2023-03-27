@@ -67,3 +67,8 @@
 .dingsl-space{
   padding: 5vh 0px 140px 0px;
 }
+
+.dingsl-button:hover{
+  background-color: aquamarine;
+}
+
