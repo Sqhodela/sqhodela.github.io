@@ -13,7 +13,9 @@ $(document).ready(function(){
          }
 
          $("#button1").click(function(){
-            $("#button1").style.backgroundColor = "#000000";
+            var object = document.getElementById("button1");
+            object.style.backgroundColor = "black";
+            
             $(".dingsl-space").hide();
          });
 
