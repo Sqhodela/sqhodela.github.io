@@ -3,14 +3,17 @@
     font-weight: 500;
     font-family: Verdana;
   }
+
 #background{
   background-image: url(running-person.png);
   background-size: contain;
   min-height: 100vh;
 }
+
 #indicator{
   background-color: burlywood;
 }
+
 .center{
     display: block;
     text-align: center;
@@ -18,15 +21,18 @@
     padding-bottom: 8px;
     width: inherit;
   }
+
 .ellipse {
   position: absolute;
   background-color: #B892D7;
   border-radius: 35%;
 }
+
 .rectangle {
   position: absolute;
   background-color: #B892D7;
 }
+
 .dingsl-left {
   width: 53vw;
   height: 7vh;
@@ -35,6 +41,7 @@
   align-self:flex-start;
   padding: 1.8vh 0px 0px 3vw;
 }
+
 .dingsl-right {
   width: 53vw;
   height: 7vh;
@@ -44,16 +51,19 @@
   text-align: right;
   padding: 1.8vh 3vw 0px 0px;
 }
+
 .text {
   position: relative;
   font-size: 20px;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
 }
+
 .Pcontainer {
   width: 100%;
   height: fit-content;
   }
+
 .header {
   width: inherit;
   height: 155px;
@@ -64,6 +74,7 @@
   flex-direction: row;
   justify-content: flex-start;
   }
+
 .dingsl-space{
   padding: 5vh 0px 140px 0px;
 }
@@ -72,3 +83,21 @@
   background-color: aquamarine;
 }
 
+.yeah{
+  margin: 3vh 0px 3vh 0px;
+}
+
+input{
+  width:80vw;
+  height: 5vh;
+  font-size: 4vh;
+  background-color:#cfb3e6 ;
+  border: 0;
+}
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 70vh;
+  width: 86vw;
+}

@@ -13,18 +13,14 @@ $(document).ready(function(){
          }
 
          $("#button1").click(function(){
-            var object = document.getElementById("button1");
-            object.style.backgroundColor = "black";
-            
-            $(".dingsl-space").hide();
-         });
-
-         $(".header").click(function(){
-            $(".dingsl-space").fadeIn();
-            
-         });
-
-         $("#button3").click(function(){
             alert("fick di 3");
+         });
+
+         $("#button2").click(function(){
+            alert("yes")
+            var yeah = int($("#time").value);
+            var na = int($("#distance").value);
+            var fickdi = yeah/na;
+            $("#result").value = fickdi;
          });
         });
