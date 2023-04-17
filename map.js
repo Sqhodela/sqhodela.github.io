@@ -26,7 +26,7 @@ require(["esri/config",
 
     const graphicsLayer = new GraphicsLayer();
     map.add(graphicsLayer);
-
+//https://developers.arcgis.com/javascript/latest/add-a-point-line-and-polygon/
     const point = {
       type: "point",
       longitude: 15,
