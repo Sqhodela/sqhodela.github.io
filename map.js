@@ -24,6 +24,23 @@ require(["esri/config",
       container: "viewDiv" // Div element
     });
 
+    const graphicsLayer = new GraphicsLayer();
+    map.add(graphicsLayer);
+
+    const point = {
+      type: "point",
+      longitude: 15,
+      latitude: 50
+    };
+    const simpleMarkerSymbol = {
+      type: "simple-marker",
+      color: [226, 119, 40],  // Orange
+      outline: {
+          color: [255, 255, 255], // White
+          width: 1
+      }
+   };
+
     $("#button2").click(function(){
         alert("yeah")
         const track = new Track({
