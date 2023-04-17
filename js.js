@@ -13,14 +13,8 @@ $(document).ready(function(){
          }
 
          $("#button1").click(function(){
-            alert("fick di 3");
+            while (true){
+            alert("jtz deafst die Website nerma nutzen");
+            }
          });
-
-         $("#button2").click(function(){
-            alert("yes")
-            var yeah = int($("#time").value);
-            var na = int($("#distance").value);
-            var fickdi = yeah/na;
-            $("#result").value = fickdi;
-         });
-        });
+        }, 500);
