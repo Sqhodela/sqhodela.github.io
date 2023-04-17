@@ -1,4 +1,15 @@
-require(["esri/config", "esri/Map", "esri/views/MapView", "esri/widgets/Locate", "esri/widgets/Track", "esri/Graphic"], function(esriConfig, Map, MapView, Locate, Track, Graphic) {
+require(["esri/config", 
+"esri/Map", 
+"esri/views/MapView", 
+"esri/widgets/Locate", 
+"esri/widgets/Track", 
+"esri/Graphic", 
+"esri/Graphic",
+"esri/layers/GraphicsLayer"
+]
+, function(esriConfig, Map, MapView, Locate, Track, Graphic, GraphicsLayer) 
+  
+  {
 
     esriConfig.apiKey = "AAPKd2b5511cd2544d6894e839880dd45998fa898LLkFa0v45C90oldPCYRRqKVoh7UHEwYXPzInfocrAE7I4PZssJtRFa2lGFN";
 
