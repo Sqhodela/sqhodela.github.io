@@ -29,6 +29,7 @@ require(["esri/config",
 
     $("#button2").click(async function(){
       //setInterval(GetPosition,5000);
+      $("button2").innerHTML = "Stop";
       GetPosition();
     });
 
@@ -40,12 +41,10 @@ require(["esri/config",
           userPosition.lat = position.coords.latitude;
           userPosition.lon = position.coords.longitude;
           CreatePoint(userPosition.lon,userPosition.lat)
-          alert("hods dau")
         });
     };
 
     function CreatePoint(longitude,latitude){
-      alert("x2")
       const point = {
         type: "point",
         longitude: longitude,
@@ -66,10 +65,6 @@ require(["esri/config",
       });
       graphicsLayer.add(pointGraphic);
     }
-
-    $("#button2").click(function(){
-        
-    });
     
     const locate = new Locate({
       view: view,
