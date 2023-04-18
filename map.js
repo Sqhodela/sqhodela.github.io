@@ -4,7 +4,6 @@ require(["esri/config",
 "esri/widgets/Locate", 
 "esri/widgets/Track", 
 "esri/Graphic", 
-"esri/Graphic",
 "esri/layers/GraphicsLayer"
 ]
 , function(esriConfig, Map, MapView, Locate, Track, Graphic, GraphicsLayer) 
@@ -24,40 +23,74 @@ require(["esri/config",
       container: "viewDiv" // Div element
     });
 
-    const fickdi = new GraphicsLayer();
+    const graphicsLayer = new GraphicsLayer();
     map.add(graphicsLayer);
 //https://developers.arcgis.com/javascript/latest/add-a-point-line-and-polygon/
-    const point = {
-      type: "point",
-      longitude: 15,
-      latitude: 50,
-    };
-    const simpleMarkerSymbol = {
-      type: "simple-marker",
-      color: [226, 119, 40],  // Orange
-      outline: {
-          color: [255, 255, 255], // White
+
+    $("#button2").click(async function(){
+      var userPosition = {
+        lat:1,
+        lon:1};
+        navigator.geolocation.getCurrentPosition(function(position){
+          userPosition.lat = position.coords.latitude;
+          userPosition.lon = position.coords.longitude;
+          CreatePoint(userPosition.lon,userPosition.lat)
+        });
+
+        
+    });
+
+    function CreatePoint(longitude,latitude){
+      const point = {
+        type: "point",
+        longitude: longitude,
+        latitude: latitude
+      };
+      const simpleMarkerSymbol = {
+        type: "simple-marker",
+        color: [226, 119, 40],
+        outline: {
+          color: [0, 0, 0],
           width: 1
-      }
-   };
+        }
+    };
+
+      const pointGraphic = new Graphic({
+        geometry: point,
+        symbol: simpleMarkerSymbol
+      });
+      graphicsLayer.add(pointGraphic);
+    }
 
     $("#button2").click(function(){
-        const track = new Track({
-            view: view,
-            graphic: new Graphic({
-              symbol: {
-                type: "simple-marker",
-                size: "12px",
-                color: "black",
-                outline: {
-                  color: "#ffffff",
-                  width: "1.5px"
-                }
-              }
-            }),
-            useHeadingEnabled: false
-          });
-          view.ui.add(track, "top-left");
+        
     });
     
+    const locate = new Locate({
+      view: view,
+      useHeadingEnabled: false,
+      goToOverride: function(view, options) {
+        options.target.scale = 1500;
+        return view.goTo(options.target);
+      }
+    });
+    view.ui.add(locate, "top-left");
+
+    const track = new Track({
+      view: view,
+      graphic: new Graphic({
+        symbol: {
+          type: "simple-marker",
+          size: "12px",
+          color: "black",
+          outline: {
+            color: "#ffffff",
+            width: "1.5px"
+          }
+        }
+      }),
+      useHeadingEnabled: false
+    });
+    view.ui.add(track, "top-left");
+
   });
