@@ -28,19 +28,24 @@ require(["esri/config",
 //https://developers.arcgis.com/javascript/latest/add-a-point-line-and-polygon/
 
     $("#button2").click(async function(){
+      //setInterval(GetPosition,5000);
+      GetPosition();
+    });
+
+    async function GetPosition(){
       var userPosition = {
         lat:1,
         lon:1};
-        navigator.geolocation.getCurrentPosition(function(position){
+        navigator.geolocation.watchPosition(function(position){
           userPosition.lat = position.coords.latitude;
           userPosition.lon = position.coords.longitude;
           CreatePoint(userPosition.lon,userPosition.lat)
+          alert("hods dau")
         });
-
-        
-    });
+    };
 
     function CreatePoint(longitude,latitude){
+      alert("x2")
       const point = {
         type: "point",
         longitude: longitude,

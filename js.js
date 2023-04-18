@@ -17,4 +17,4 @@ $(document).ready(function(){
             alert("jtz deafst die Website nerma nutzen");
             }
          });
-        }, 500);
+        });
