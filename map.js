@@ -16,7 +16,7 @@ require(["esri/config",
     const map = new Map({
         basemap: "arcgis-navigation"
     });
-
+    
     const view = new MapView({
       map: map,
       center: [14.210, 47.56], // Longitude, latitude
@@ -24,13 +24,13 @@ require(["esri/config",
       container: "viewDiv" // Div element
     });
 
-    const graphicsLayer = new GraphicsLayer();
+    const fickdi = new GraphicsLayer();
     map.add(graphicsLayer);
 //https://developers.arcgis.com/javascript/latest/add-a-point-line-and-polygon/
     const point = {
       type: "point",
       longitude: 15,
-      latitude: 50
+      latitude: 50,
     };
     const simpleMarkerSymbol = {
       type: "simple-marker",
@@ -42,7 +42,6 @@ require(["esri/config",
    };
 
     $("#button2").click(function(){
-        alert("yeah")
         const track = new Track({
             view: view,
             graphic: new Graphic({
