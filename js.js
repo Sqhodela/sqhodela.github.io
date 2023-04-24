@@ -11,10 +11,4 @@ $(document).ready(function(){
          else {
             //$("div:not(.yes)").hide();
          }
-
-         $("#button1").click(function(){
-            while (true){
-            alert("jtz deafst die Website nerma nutzen");
-            }
-         });
         });

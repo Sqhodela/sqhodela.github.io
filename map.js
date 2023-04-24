@@ -9,6 +9,9 @@ require(["esri/config",
 , function(esriConfig, Map, MapView, Locate, Track, Graphic, GraphicsLayer) 
   
   {
+    const delay = millis => new Promise((resolve, reject) => {
+      setTimeout(_ => resolve(), millis)
+    });
 
     esriConfig.apiKey = "AAPKd2b5511cd2544d6894e839880dd45998fa898LLkFa0v45C90oldPCYRRqKVoh7UHEwYXPzInfocrAE7I4PZssJtRFa2lGFN";
 
@@ -25,12 +28,47 @@ require(["esri/config",
 
     const graphicsLayer = new GraphicsLayer();
     map.add(graphicsLayer);
-//https://developers.arcgis.com/javascript/latest/add-a-point-line-and-polygon/
+    var yeah = false;
 
-    $("#button2").click(async function(){
-      //setInterval(GetPosition,5000);
-      $("button2").innerHTML = "Stop";
-      GetPosition();
+    $("#button1").click(function(){
+      var userPosition = {
+        lat:1,
+        lon:1};
+        navigator.geolocation.getCurrentPosition(function(position){
+          userPosition.lat = position.coords.latitude;
+          userPosition.lon = position.coords.longitude;
+          alert("You are at \nLatitude: " + userPosition.lat + "\nLongitude: " + userPosition.lon);
+          CreatePoint(userPosition.lon,userPosition.lat)
+        });
+    });
+
+    var interval = 1000; // ms
+    var expected = Date.now() + interval;
+    var timer = 0;
+
+    setTimeout(step, interval);
+    function step() {
+        var dt = Date.now() - expected; // the drift (positive for overshooting)
+        if (dt > interval) {
+            // something really bad happened. Maybe the browser (tab) was inactive?
+            // possibly special handling to avoid futile "catch up" run
+        }
+        timer++;
+        
+        expected += interval;
+        setTimeout(step, Math.max(0, interval - dt)); // take into account drift
+    }
+
+    $("#button2").click(function(){
+      if(!yeah){
+        document.getElementById("buttonTrack").innerHTML = "Stop tracking";
+        yeah = true;
+        GetPosition();
+    }
+      else if(yeah){
+        document.getElementById("buttonTrack").innerHTML = "Start tracking";
+        yeah = false;
+      }
     });
 
     async function GetPosition(){
@@ -42,6 +80,10 @@ require(["esri/config",
           userPosition.lon = position.coords.longitude;
           CreatePoint(userPosition.lon,userPosition.lat)
         });
+      if(yeah){
+      //await delay(1000);
+      //GetPosition();
+      }
     };
 
     function CreatePoint(longitude,latitude){
