@@ -1,9 +1,9 @@
 {
     "name": "We know where you are!",
-"description": "So bassicly, you press a button, and we know where you are, great isn't it?",
+    "description": "So bassicly, you press a button, and we know where you are, great isn't it?",
     "lang": "de-DE",
-    "start_url": "/"
-"icons": [
+    "start_url": "/",
+    "icons": [
         {
             "src": "/icon.png",
             "sizes": "512x512"
