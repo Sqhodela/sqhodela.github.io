@@ -9,6 +9,6 @@ $(document).ready(function(){
             $(DesktopInUse).hide();
          }
          else {
-            //$("div:not(.yes)").hide();
+            $("div:not(.yes)").hide();
          }
         });

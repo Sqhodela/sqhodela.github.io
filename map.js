@@ -42,6 +42,18 @@ require(["esri/config",
         });
     });
 
+    $("#button3").click(function(){
+      var userPosition = {
+        lat:1,
+        lon:1};
+        navigator.geolocation.getCurrentPosition(function(position){
+          userPosition.lat = position.coords.latitude;
+          userPosition.lon = position.coords.longitude;
+          alert("You are at \nLatitude: " + userPosition.lat + "\nLongitude: " + userPosition.lon);
+          CreatePoint(userPosition.lon,userPosition.lat)
+        });
+    });
+
     var interval = 1000; // ms
     var expected = Date.now() + interval;
     var timer = 0;
