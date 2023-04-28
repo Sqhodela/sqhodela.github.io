@@ -1,12 +1,24 @@
 {
-    "name": "We know where you are!",
-    "description": "So bassicly, you press a button, and we know where you are, great isn't it?",
-    "lang": "de-DE",
-    "start_url": "/",
+    "name": "I know where you are",
+    "short_name": "Hello",
+    "theme_color": "#b892d7",
+    "background_color": "#ffffff",
+     "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/App/",
+    "start_url": "/App/index.html",
     "icons": [
         {
-            "src": "/icon.png",
+            "src": "/App/icon.png",
             "sizes": "512x512"
+        },
+        {
+            "src": "/App/icon2.png",
+            "sizes": "512x512"
+        },
+        {
+            "src":"/App/icon3.png",
+            "sizes": "829x495"
         }
     ]
 }
